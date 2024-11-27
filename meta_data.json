@@ -1,0 +1,14 @@
+{
+    "categories": {
+        "0": "productivity",
+        "1": "small business",
+        "2": "containers"
+    },
+    "data_tracked": false,
+    "demo_page": "https://demo-codeeditor.bubbleapps.io/version-test",
+    "description": "Add a Code Editor to your application. Have users able to view/edit code in many language. \n\n(This is an initial version just for myself but why not having the whole community benefit from it. Sorry in advance for the lack of documentations, I'll do it as soon as I have more time.)",
+    "image": "//meta-q.cdn.bubble.io/f1732343088454x458853752146757060/unnamed%20%2839%29%20%281%29.png",
+    "license": "open_source",
+    "name": "Code Editor (HTML, JS & many more)",
+    "plugin_instructions": "1. Add the code editor element to your page\n2. Adjust parameters as you wish\n3. Simply see what happen"
+}

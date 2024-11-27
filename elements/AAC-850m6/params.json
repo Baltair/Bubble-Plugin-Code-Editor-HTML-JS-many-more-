@@ -1,0 +1,489 @@
+{
+    "add_hover_pressed": true,
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 400,
+        "width": 400
+    },
+    "display": "Code Editor",
+    "fields": {
+        "AAD": {
+            "caption": "Theme",
+            "default_val": "vs-dark",
+            "doc": "Options: \"vs\", \"vs-dark\", \"hc-black\"",
+            "editor": "DynamicValue",
+            "name": "theme",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAE": {
+            "caption": "Language",
+            "default_val": "javascript",
+            "doc": "Options: \"plaintext\", \"abap\", \"apex\", \"azcli\", \"bat\", \"bicep\", \"cameligo\", \"clojure\", \"coffeescript\", \"c\", \"cpp\", \"csharp\", \"csp\", \"css\", \"cypher\", \"dart\", \"dockerfile\", \"ecl\", \"elixir\", \"flow9\", \"fsharp\", \"freemarker2\", \"freemarker2.tag-angle.interpolation-dollar\", \"freemarker2.tag-bracket.interpolation-dollar\", \"freemarker2.tag-angle.interpolation-bracket\", \"freemarker2.tag-bracket.interpolation-bracket\", \"freemarker2.tag-auto.interpolation-dollar\", \"freemarker2.tag-auto.interpolation-bracket\", \"go\", \"graphql\", \"handlebars\", \"hcl\", \"html\", \"ini\", \"java\", \"javascript\", \"julia\", \"kotlin\", \"less\", \"lexon\", \"lua\", \"liquid\", \"m3\", \"markdown\", \"mdx\", \"mips\", \"msdax\", \"mysql\", \"objective-c\", \"pascal\", \"pascaligo\", \"perl\", \"pgsql\", \"php\", \"pla\", \"postiats\", \"powerquery\", \"powershell\", \"proto\", \"pug\", \"python\", \"qsharp\", \"r\", \"razor\", \"redis\", \"redshift\", \"restructuredtext\", \"ruby\", \"rust\", \"sb\", \"scala\", \"scheme\", \"scss\", \"shell\", \"sol\", \"aes\", \"sparql\", \"sql\", \"st\", \"swift\", \"systemverilog\", \"verilog\", \"tcl\", \"twig\", \"typescript\", \"typespec\", \"vb\", \"wgsl\", \"xml\", \"yaml\", \"json\"",
+            "editor": "DynamicValue",
+            "name": "language",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAF": {
+            "caption": "Initial Value",
+            "default_val": "// Start coding here\\nconsole.log('Hello, Monaco!');",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "initValue",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAH": {
+            "caption": "---------- EDITOR CUSTOMIZATIONS ----------",
+            "editor": "Label",
+            "name": "editor_customizationS",
+            "rank": 7
+        },
+        "AAI": {
+            "caption": "autoIndent",
+            "default_val": "full",
+            "doc": "Options: \"none\", \"advanced\", \"full\", \"brackets\", \"keep\"",
+            "editor": "DynamicValue",
+            "name": "autoIndent",
+            "rank": 8,
+            "value": "text"
+        },
+        "AAJ": {
+            "caption": "autoSurround",
+            "default_val": "languageDefined",
+            "doc": "\"languageDefined\", \"quotes\", \"brackets\", \"never\"",
+            "editor": "DynamicValue",
+            "name": "autoSurround",
+            "rank": 9,
+            "value": "text"
+        },
+        "AAK": {
+            "caption": "automaticLayout",
+            "default_val": true,
+            "doc": "Enable that the editor will install a ResizeObserver to check if its container dom node size has changed",
+            "editor": "DynamicValue",
+            "name": "automaticLayout",
+            "rank": 10,
+            "value": "boolean"
+        },
+        "AAL": {
+            "caption": "cursorBlinking",
+            "default_val": "smooth",
+            "doc": "Options: \"blink\", \"smooth\", \"phase\", \"expand\", \"solid\"",
+            "editor": "DynamicValue",
+            "name": "cursorBlinking",
+            "rank": 11,
+            "value": "text"
+        },
+        "AAM": {
+            "caption": "cursorStyle",
+            "default_val": "line-thin",
+            "doc": "Options: \"line\", \"block\", \"underline\", \"line-thin\", \"block-outline\", \"underline-thin\"",
+            "editor": "DynamicValue",
+            "name": "cursorStyle",
+            "rank": 12,
+            "value": "text"
+        },
+        "AAN": {
+            "caption": "folding",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "folding",
+            "rank": 13,
+            "value": "boolean"
+        },
+        "AAO": {
+            "caption": "foldingHighlight",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "foldingHighlight",
+            "rank": 14,
+            "value": "boolean"
+        },
+        "AAP": {
+            "caption": "showFoldingControls",
+            "default_val": "always",
+            "doc": "//Options: \"always\", \"never\", \"mouseover\"",
+            "editor": "DynamicValue",
+            "name": "showfoldingcontrols",
+            "rank": 15,
+            "value": "text"
+        },
+        "AAQ": {
+            "caption": "fontSize",
+            "default_val": 14,
+            "editor": "DynamicValue",
+            "name": "fontSize",
+            "rank": 16,
+            "value": "number"
+        },
+        "AAR": {
+            "caption": "letterSpacing",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "letterSpacing",
+            "rank": 17,
+            "value": "number"
+        },
+        "AAS": {
+            "caption": "lineHeight",
+            "default_val": 1.35,
+            "editor": "DynamicValue",
+            "name": "lineHeight",
+            "rank": 18,
+            "value": "number"
+        },
+        "AAT": {
+            "caption": "largeFileOptimizations",
+            "default_val": false,
+            "doc": "Special handling for large files to disable certain memory intensive features",
+            "editor": "DynamicValue",
+            "name": "largeFileOptimizations",
+            "rank": 19,
+            "value": "boolean"
+        },
+        "AAU": {
+            "caption": "lineNumbers",
+            "default_val": "on",
+            "doc": "Options: \"on\", \"off\", \"relative\", \"interval\"",
+            "editor": "DynamicValue",
+            "name": "lineNumbers",
+            "rank": 20,
+            "value": "text"
+        },
+        "AAV": {
+            "caption": "lineNumbersMinChars",
+            "default_val": 3,
+            "editor": "DynamicValue",
+            "name": "lineNumbersMinChars",
+            "rank": 21,
+            "value": "number"
+        },
+        "AAW": {
+            "caption": "linkedEditing",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "linkedEditing",
+            "rank": 22,
+            "value": "boolean"
+        },
+        "AAX": {
+            "caption": "links",
+            "default_val": true,
+            "doc": "Enable detecting links and making them clickable.",
+            "editor": "DynamicValue",
+            "name": "links",
+            "rank": 23,
+            "value": "boolean"
+        },
+        "AAY": {
+            "caption": "matchBrackets",
+            "default_val": "always",
+            "doc": "Options: \"always\", \"never\", \"near\"",
+            "editor": "DynamicValue",
+            "name": "matchBrackets",
+            "rank": 24,
+            "value": "text"
+        },
+        "AAZ": {
+            "caption": "minimap_enabled",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "minimap_enabled",
+            "rank": 5,
+            "value": "boolean"
+        },
+        "AAa": {
+            "caption": "minimap_autohide",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "minimap_autohide",
+            "rank": 25,
+            "value": "boolean"
+        },
+        "AAb": {
+            "caption": "minimap_showSlider",
+            "default_val": "always",
+            "doc": "Options: \"always\", \"mouseover\"",
+            "editor": "DynamicValue",
+            "name": "minimap_showSlider",
+            "rank": 26,
+            "value": "text"
+        },
+        "AAc": {
+            "caption": "minimap_side",
+            "default_val": "right",
+            "doc": "Options: \"right\", \"left\"",
+            "editor": "DynamicValue",
+            "name": "minimap_side",
+            "rank": 27,
+            "value": "text"
+        },
+        "AAd": {
+            "caption": "minimap_size",
+            "default_val": "proportional",
+            "doc": "Options: \"proportional\", \"fill\", \"fit\"",
+            "editor": "DynamicValue",
+            "name": "minimap_size",
+            "rank": 28,
+            "value": "text"
+        },
+        "AAe": {
+            "caption": "placeholder",
+            "doc": "What is being displayed when the editor is empty",
+            "editor": "DynamicValue",
+            "name": "placeholder",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "AAf": {
+            "caption": "readOnly",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "readOnly",
+            "rank": 4,
+            "value": "boolean"
+        },
+        "AAg": {
+            "caption": "scrollBeyondLastColumn",
+            "default_val": 0,
+            "editor": "DynamicValue",
+            "name": "scrollBeyondLastColumn",
+            "rank": 29,
+            "value": "number"
+        },
+        "AAh": {
+            "caption": "scrollBeyondLastLine",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "scrollBeyondLastLine",
+            "rank": 30,
+            "value": "boolean"
+        },
+        "AAi": {
+            "caption": "scrollbar_vertical",
+            "default_val": "auto",
+            "doc": "Options: \"auto\", \"visible\", \"hidden\"",
+            "editor": "DynamicValue",
+            "name": "scrollbar_vertical",
+            "rank": 31,
+            "value": "text"
+        },
+        "AAj": {
+            "caption": "scrollbar_verticalHasArrows",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "scrollbar_verticalHasArrows",
+            "rank": 32,
+            "value": "boolean"
+        },
+        "AAk": {
+            "caption": "scrollbar_verticalScrollbarSize",
+            "default_val": 15,
+            "editor": "DynamicValue",
+            "name": "scrollbar_verticalScrollbarSize",
+            "rank": 33,
+            "value": "number"
+        },
+        "AAl": {
+            "caption": "scrollbar_verticalSliderSize",
+            "default_val": 15,
+            "editor": "DynamicValue",
+            "name": "scrollbar_verticalSliderSize",
+            "rank": 34,
+            "value": "number"
+        },
+        "AAm": {
+            "caption": "scrollbar_horizontal",
+            "default_val": "auto",
+            "doc": "Options: \"auto\", \"visible\", \"hidden\"",
+            "editor": "DynamicValue",
+            "name": "scrollbar_horizontal",
+            "rank": 35,
+            "value": "text"
+        },
+        "AAn": {
+            "caption": "scrollbar_horizontalHasArrows",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "scrollbar_horizontalHasArrows",
+            "rank": 36,
+            "value": "boolean"
+        },
+        "AAo": {
+            "caption": "scrollbar_horizontalScrollbarSize",
+            "default_val": 15,
+            "editor": "DynamicValue",
+            "name": "scrollbar_horizontalScrollbarSize",
+            "rank": 37,
+            "value": "number"
+        },
+        "AAp": {
+            "caption": "scrollbar_horizontalSliderSize",
+            "default_val": 15,
+            "editor": "DynamicValue",
+            "name": "scrollbar_horizontalSliderSize",
+            "rank": 38,
+            "value": "number"
+        },
+        "AAq": {
+            "caption": "selectionHighlight",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "selectionHighlight",
+            "rank": 39,
+            "value": "boolean"
+        },
+        "AAr": {
+            "caption": "showUnused",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "showUnused",
+            "rank": 40,
+            "value": "boolean"
+        },
+        "AAs": {
+            "caption": "stickyScroll_defaultModel",
+            "default_val": "outlineModel",
+            "doc": "Options: \"outlineModel\", \"foldingProviderModel\", \"indentationModel\"",
+            "editor": "DynamicValue",
+            "name": "stickyScroll_defaultModel",
+            "rank": 41,
+            "value": "text"
+        },
+        "AAt": {
+            "caption": "stickyscroll_enabled",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "stickyscroll_enabled",
+            "rank": 6,
+            "value": "boolean"
+        },
+        "AAu": {
+            "caption": "stickyScroll_scrollWithEditor",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "stickyScroll_scrollWithEditor",
+            "rank": 42,
+            "value": "boolean"
+        },
+        "AAv": {
+            "caption": "trimAutoWhitespace",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "trimAutoWhitespace",
+            "rank": 43,
+            "value": "boolean"
+        },
+        "AAw": {
+            "caption": "wordWrap",
+            "default_val": "off",
+            "doc": "Options: \"off\", \"on\", \"wordWrapColumn\", \"bounded\"",
+            "editor": "DynamicValue",
+            "name": "wordWrap",
+            "rank": 44,
+            "value": "text"
+        },
+        "AAx": {
+            "caption": "inlineCompletionsAccessibilityVerbose",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "inlineCompletionsAccessibilityVerbose",
+            "rank": 45,
+            "value": "boolean"
+        },
+        "AAy": {
+            "caption": "tabCompletion",
+            "default_val": "on",
+            "doc": "Options: \"off\", \"on\", \"onlySnippets\"",
+            "editor": "DynamicValue",
+            "name": "tabCompletion",
+            "rank": 46,
+            "value": "text"
+        },
+        "AAz": {
+            "caption": "autoClosingBrackets",
+            "default_val": "always",
+            "doc": "Options: \"always\", \"languageDefined\", \"beforeWhitespace\", \"never\"",
+            "editor": "DynamicValue",
+            "name": "autoClosingBrackets",
+            "rank": 47,
+            "value": "text"
+        },
+        "ABA": {
+            "caption": "autoClosingComments",
+            "default_val": "always",
+            "doc": "Options: \"always\", \"languageDefined\", \"beforeWhitespace\", \"never\"",
+            "editor": "DynamicValue",
+            "name": "autoClosingComments",
+            "rank": 48,
+            "value": "text"
+        },
+        "ABB": {
+            "caption": "autoClosingDelete",
+            "default_val": "always",
+            "doc": "Options: \"always\", \"auto\", \"never\"",
+            "editor": "DynamicValue",
+            "name": "autoClosingDelete",
+            "rank": 49,
+            "value": "text"
+        },
+        "ABC": {
+            "caption": "autoClosingOvertype",
+            "default_val": "always",
+            "doc": "Options: \"always\", \"auto\", \"never\"",
+            "editor": "DynamicValue",
+            "name": "autoClosingOvertype",
+            "rank": 50,
+            "value": "text"
+        },
+        "ABD": {
+            "caption": "autoClosingQuotes",
+            "default_val": "always",
+            "doc": "Options: \"always\", \"languageDefined\", \"beforeWhitespace\", \"never\"",
+            "editor": "DynamicValue",
+            "name": "autoClosingQuotes",
+            "rank": 51,
+            "value": "text"
+        },
+        "ABE": {
+            "caption": "colorDecorators",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "colorDecorators",
+            "rank": 52,
+            "value": "boolean"
+        },
+        "ABF": {
+            "caption": "colorDecoratorsActivatedOn",
+            "default_val": "clickAndHover",
+            "doc": "Options: \"clickAndHover\", \"click\", \"hover\"",
+            "editor": "DynamicValue",
+            "name": "colorDecoratorsActivatedOn",
+            "rank": 53,
+            "value": "text"
+        }
+    },
+    "has_reset_fn": true,
+    "icon": "ion-code",
+    "property_applications": {
+        "Background": false,
+        "Border": true,
+        "BoxShadow": true,
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "AAG": {
+            "caption": "current value",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "current_value",
+            "value": "text"
+        }
+    }
+}
