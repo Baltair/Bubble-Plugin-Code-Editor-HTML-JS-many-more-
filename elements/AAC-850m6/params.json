@@ -7,6 +7,18 @@
         "width": 400
     },
     "display": "Code Editor",
+    "events": {
+        "ABG": {
+            "caption": "content is updated",
+            "doc": "When the value of the editor just got Updated. Use with care, it's called on every small changes.",
+            "name": "content_modified"
+        },
+        "ABI": {
+            "caption": "editor is initialized",
+            "doc": "When the editor element is first being initialized. ",
+            "name": "editor_initialized"
+        }
+    },
     "fields": {
         "AAD": {
             "caption": "Theme",
@@ -28,7 +40,6 @@
         },
         "AAF": {
             "caption": "Initial Value",
-            "default_val": "// Start coding here\\nconsole.log('Hello, Monaco!');",
             "editor": "DynamicValue",
             "long_text": true,
             "name": "initValue",
@@ -39,156 +50,156 @@
             "caption": "---------- EDITOR CUSTOMIZATIONS ----------",
             "editor": "Label",
             "name": "editor_customizationS",
-            "rank": 7
+            "rank": 8
         },
         "AAI": {
-            "caption": "autoIndent",
+            "caption": "Auto Indent",
             "default_val": "full",
             "doc": "Options: \"none\", \"advanced\", \"full\", \"brackets\", \"keep\"",
             "editor": "DynamicValue",
             "name": "autoIndent",
-            "rank": 8,
+            "rank": 9,
             "value": "text"
         },
         "AAJ": {
-            "caption": "autoSurround",
+            "caption": "Auto Surround",
             "default_val": "languageDefined",
             "doc": "\"languageDefined\", \"quotes\", \"brackets\", \"never\"",
             "editor": "DynamicValue",
             "name": "autoSurround",
-            "rank": 9,
+            "rank": 10,
             "value": "text"
         },
         "AAK": {
-            "caption": "automaticLayout",
+            "caption": "Automatic Layout",
             "default_val": true,
             "doc": "Enable that the editor will install a ResizeObserver to check if its container dom node size has changed",
             "editor": "DynamicValue",
             "name": "automaticLayout",
-            "rank": 10,
+            "rank": 11,
             "value": "boolean"
         },
         "AAL": {
-            "caption": "cursorBlinking",
+            "caption": "Cursor Blinking",
             "default_val": "smooth",
             "doc": "Options: \"blink\", \"smooth\", \"phase\", \"expand\", \"solid\"",
             "editor": "DynamicValue",
             "name": "cursorBlinking",
-            "rank": 11,
+            "rank": 12,
             "value": "text"
         },
         "AAM": {
-            "caption": "cursorStyle",
+            "caption": "Cursor Style",
             "default_val": "line-thin",
             "doc": "Options: \"line\", \"block\", \"underline\", \"line-thin\", \"block-outline\", \"underline-thin\"",
             "editor": "DynamicValue",
             "name": "cursorStyle",
-            "rank": 12,
+            "rank": 13,
             "value": "text"
         },
         "AAN": {
-            "caption": "folding",
+            "caption": "Folding",
             "default_val": true,
             "editor": "DynamicValue",
             "name": "folding",
-            "rank": 13,
-            "value": "boolean"
-        },
-        "AAO": {
-            "caption": "foldingHighlight",
-            "default_val": true,
-            "editor": "DynamicValue",
-            "name": "foldingHighlight",
             "rank": 14,
             "value": "boolean"
         },
+        "AAO": {
+            "caption": "Folding Highlight",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "foldingHighlight",
+            "rank": 15,
+            "value": "boolean"
+        },
         "AAP": {
-            "caption": "showFoldingControls",
+            "caption": "Show Folding Controls",
             "default_val": "always",
             "doc": "//Options: \"always\", \"never\", \"mouseover\"",
             "editor": "DynamicValue",
             "name": "showfoldingcontrols",
-            "rank": 15,
+            "rank": 16,
             "value": "text"
         },
         "AAQ": {
-            "caption": "fontSize",
+            "caption": "Font Size",
             "default_val": 14,
             "editor": "DynamicValue",
             "name": "fontSize",
-            "rank": 16,
-            "value": "number"
-        },
-        "AAR": {
-            "caption": "letterSpacing",
-            "default_val": 0,
-            "editor": "DynamicValue",
-            "name": "letterSpacing",
             "rank": 17,
             "value": "number"
         },
-        "AAS": {
-            "caption": "lineHeight",
-            "default_val": 1.35,
+        "AAR": {
+            "caption": " Letter Spacing",
+            "default_val": 0,
             "editor": "DynamicValue",
-            "name": "lineHeight",
+            "name": "letterSpacing",
             "rank": 18,
             "value": "number"
         },
+        "AAS": {
+            "caption": "Line Height",
+            "default_val": 1.35,
+            "editor": "DynamicValue",
+            "name": "lineHeight",
+            "rank": 19,
+            "value": "number"
+        },
         "AAT": {
-            "caption": "largeFileOptimizations",
+            "caption": "Large File Optimizations",
             "default_val": false,
             "doc": "Special handling for large files to disable certain memory intensive features",
             "editor": "DynamicValue",
             "name": "largeFileOptimizations",
-            "rank": 19,
+            "rank": 20,
             "value": "boolean"
         },
         "AAU": {
-            "caption": "lineNumbers",
+            "caption": "Line Numbers",
             "default_val": "on",
             "doc": "Options: \"on\", \"off\", \"relative\", \"interval\"",
             "editor": "DynamicValue",
             "name": "lineNumbers",
-            "rank": 20,
+            "rank": 21,
             "value": "text"
         },
         "AAV": {
-            "caption": "lineNumbersMinChars",
+            "caption": "Line NumbersMin Chars",
             "default_val": 3,
             "editor": "DynamicValue",
             "name": "lineNumbersMinChars",
-            "rank": 21,
+            "rank": 22,
             "value": "number"
         },
         "AAW": {
-            "caption": "linkedEditing",
+            "caption": "Linked Editing",
             "default_val": false,
             "editor": "DynamicValue",
             "name": "linkedEditing",
-            "rank": 22,
+            "rank": 23,
             "value": "boolean"
         },
         "AAX": {
-            "caption": "links",
+            "caption": "Links Detection",
             "default_val": true,
             "doc": "Enable detecting links and making them clickable.",
             "editor": "DynamicValue",
             "name": "links",
-            "rank": 23,
+            "rank": 24,
             "value": "boolean"
         },
         "AAY": {
-            "caption": "matchBrackets",
+            "caption": "Match Brackets",
             "default_val": "always",
             "doc": "Options: \"always\", \"never\", \"near\"",
             "editor": "DynamicValue",
             "name": "matchBrackets",
-            "rank": 24,
+            "rank": 25,
             "value": "text"
         },
         "AAZ": {
-            "caption": "minimap_enabled",
+            "caption": "Enable Minimap",
             "default_val": true,
             "editor": "DynamicValue",
             "name": "minimap_enabled",
@@ -196,42 +207,42 @@
             "value": "boolean"
         },
         "AAa": {
-            "caption": "minimap_autohide",
+            "caption": "Minimap Autohide",
             "default_val": false,
             "editor": "DynamicValue",
             "name": "minimap_autohide",
-            "rank": 25,
+            "rank": 26,
             "value": "boolean"
         },
         "AAb": {
-            "caption": "minimap_showSlider",
+            "caption": "Minimap Show Slider",
             "default_val": "always",
             "doc": "Options: \"always\", \"mouseover\"",
             "editor": "DynamicValue",
             "name": "minimap_showSlider",
-            "rank": 26,
+            "rank": 27,
             "value": "text"
         },
         "AAc": {
-            "caption": "minimap_side",
+            "caption": "Minimap Side",
             "default_val": "right",
             "doc": "Options: \"right\", \"left\"",
             "editor": "DynamicValue",
             "name": "minimap_side",
-            "rank": 27,
+            "rank": 28,
             "value": "text"
         },
         "AAd": {
-            "caption": "minimap_size",
+            "caption": "Minimap Size",
             "default_val": "proportional",
             "doc": "Options: \"proportional\", \"fill\", \"fit\"",
             "editor": "DynamicValue",
             "name": "minimap_size",
-            "rank": 28,
+            "rank": 29,
             "value": "text"
         },
         "AAe": {
-            "caption": "placeholder",
+            "caption": "Placeholder",
             "doc": "What is being displayed when the editor is empty",
             "editor": "DynamicValue",
             "name": "placeholder",
@@ -240,7 +251,7 @@
             "value": "text"
         },
         "AAf": {
-            "caption": "readOnly",
+            "caption": "Read Only",
             "default_val": false,
             "editor": "DynamicValue",
             "name": "readOnly",
@@ -248,114 +259,114 @@
             "value": "boolean"
         },
         "AAg": {
-            "caption": "scrollBeyondLastColumn",
+            "caption": "Scroll Beyond Last Column",
             "default_val": 0,
             "editor": "DynamicValue",
             "name": "scrollBeyondLastColumn",
-            "rank": 29,
+            "rank": 30,
             "value": "number"
         },
         "AAh": {
-            "caption": "scrollBeyondLastLine",
+            "caption": "Scroll Beyond Last Line",
             "default_val": false,
             "editor": "DynamicValue",
             "name": "scrollBeyondLastLine",
-            "rank": 30,
+            "rank": 31,
             "value": "boolean"
         },
         "AAi": {
-            "caption": "scrollbar_vertical",
+            "caption": "V-Scrollbar Visibility",
             "default_val": "auto",
             "doc": "Options: \"auto\", \"visible\", \"hidden\"",
             "editor": "DynamicValue",
             "name": "scrollbar_vertical",
-            "rank": 31,
+            "rank": 32,
             "value": "text"
         },
         "AAj": {
-            "caption": "scrollbar_verticalHasArrows",
+            "caption": "V-Scrollbar: Has Arrows",
             "default_val": false,
             "editor": "DynamicValue",
             "name": "scrollbar_verticalHasArrows",
-            "rank": 32,
+            "rank": 33,
             "value": "boolean"
         },
         "AAk": {
-            "caption": "scrollbar_verticalScrollbarSize",
+            "caption": "V-Scrollbar: Size",
             "default_val": 15,
             "editor": "DynamicValue",
             "name": "scrollbar_verticalScrollbarSize",
-            "rank": 33,
-            "value": "number"
-        },
-        "AAl": {
-            "caption": "scrollbar_verticalSliderSize",
-            "default_val": 15,
-            "editor": "DynamicValue",
-            "name": "scrollbar_verticalSliderSize",
             "rank": 34,
             "value": "number"
         },
+        "AAl": {
+            "caption": "V-Scrollbar: Slider Size",
+            "default_val": 15,
+            "editor": "DynamicValue",
+            "name": "scrollbar_verticalSliderSize",
+            "rank": 35,
+            "value": "number"
+        },
         "AAm": {
-            "caption": "scrollbar_horizontal",
+            "caption": "H-Scrollbar: Visibility",
             "default_val": "auto",
             "doc": "Options: \"auto\", \"visible\", \"hidden\"",
             "editor": "DynamicValue",
             "name": "scrollbar_horizontal",
-            "rank": 35,
+            "rank": 36,
             "value": "text"
         },
         "AAn": {
-            "caption": "scrollbar_horizontalHasArrows",
+            "caption": "H-Scrollbar: HasArrows",
             "default_val": false,
             "editor": "DynamicValue",
             "name": "scrollbar_horizontalHasArrows",
-            "rank": 36,
+            "rank": 37,
             "value": "boolean"
         },
         "AAo": {
-            "caption": "scrollbar_horizontalScrollbarSize",
+            "caption": "H-Scrollbar: Size",
             "default_val": 15,
             "editor": "DynamicValue",
             "name": "scrollbar_horizontalScrollbarSize",
-            "rank": 37,
-            "value": "number"
-        },
-        "AAp": {
-            "caption": "scrollbar_horizontalSliderSize",
-            "default_val": 15,
-            "editor": "DynamicValue",
-            "name": "scrollbar_horizontalSliderSize",
             "rank": 38,
             "value": "number"
         },
+        "AAp": {
+            "caption": "H-Scrollbar: Slider Size",
+            "default_val": 15,
+            "editor": "DynamicValue",
+            "name": "scrollbar_horizontalSliderSize",
+            "rank": 39,
+            "value": "number"
+        },
         "AAq": {
-            "caption": "selectionHighlight",
+            "caption": "Selection Highlight",
             "default_val": true,
             "editor": "DynamicValue",
             "name": "selectionHighlight",
-            "rank": 39,
-            "value": "boolean"
-        },
-        "AAr": {
-            "caption": "showUnused",
-            "default_val": true,
-            "editor": "DynamicValue",
-            "name": "showUnused",
             "rank": 40,
             "value": "boolean"
         },
+        "AAr": {
+            "caption": "Show Unused",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "showUnused",
+            "rank": 41,
+            "value": "boolean"
+        },
         "AAs": {
-            "caption": "stickyScroll_defaultModel",
+            "caption": "StickyScroll: Default Model",
             "default_val": "outlineModel",
             "doc": "Options: \"outlineModel\", \"foldingProviderModel\", \"indentationModel\"",
             "editor": "DynamicValue",
             "name": "stickyScroll_defaultModel",
-            "rank": 41,
+            "rank": 42,
             "value": "text"
         },
         "AAt": {
-            "caption": "stickyscroll_enabled",
+            "caption": "Enable StickyScroll",
             "default_val": true,
             "editor": "DynamicValue",
             "name": "stickyscroll_enabled",
@@ -363,108 +374,117 @@
             "value": "boolean"
         },
         "AAu": {
-            "caption": "stickyScroll_scrollWithEditor",
+            "caption": "StickyScroll: Scroll With Editor",
             "default_val": true,
             "editor": "DynamicValue",
             "name": "stickyScroll_scrollWithEditor",
-            "rank": 42,
-            "value": "boolean"
-        },
-        "AAv": {
-            "caption": "trimAutoWhitespace",
-            "default_val": true,
-            "editor": "DynamicValue",
-            "name": "trimAutoWhitespace",
             "rank": 43,
             "value": "boolean"
         },
+        "AAv": {
+            "caption": "Trim Auto Whitespace",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "trimAutoWhitespace",
+            "rank": 44,
+            "value": "boolean"
+        },
         "AAw": {
-            "caption": "wordWrap",
+            "caption": "Word Wrap",
             "default_val": "off",
             "doc": "Options: \"off\", \"on\", \"wordWrapColumn\", \"bounded\"",
             "editor": "DynamicValue",
             "name": "wordWrap",
-            "rank": 44,
+            "rank": 45,
             "value": "text"
         },
         "AAx": {
-            "caption": "inlineCompletionsAccessibilityVerbose",
+            "caption": "Inline Completions Accessibility Verbose",
             "default_val": true,
             "editor": "DynamicValue",
             "name": "inlineCompletionsAccessibilityVerbose",
-            "rank": 45,
+            "rank": 46,
             "value": "boolean"
         },
         "AAy": {
-            "caption": "tabCompletion",
+            "caption": "Tab Completion",
             "default_val": "on",
             "doc": "Options: \"off\", \"on\", \"onlySnippets\"",
             "editor": "DynamicValue",
             "name": "tabCompletion",
-            "rank": 46,
+            "rank": 47,
             "value": "text"
         },
         "AAz": {
-            "caption": "autoClosingBrackets",
+            "caption": "Auto-Closing Brackets",
             "default_val": "always",
             "doc": "Options: \"always\", \"languageDefined\", \"beforeWhitespace\", \"never\"",
             "editor": "DynamicValue",
             "name": "autoClosingBrackets",
-            "rank": 47,
+            "rank": 48,
             "value": "text"
         },
         "ABA": {
-            "caption": "autoClosingComments",
+            "caption": "Auto-Closing Comments",
             "default_val": "always",
             "doc": "Options: \"always\", \"languageDefined\", \"beforeWhitespace\", \"never\"",
             "editor": "DynamicValue",
             "name": "autoClosingComments",
-            "rank": 48,
+            "rank": 49,
             "value": "text"
         },
         "ABB": {
-            "caption": "autoClosingDelete",
+            "caption": "Auto-Closing Delete",
             "default_val": "always",
             "doc": "Options: \"always\", \"auto\", \"never\"",
             "editor": "DynamicValue",
             "name": "autoClosingDelete",
-            "rank": 49,
+            "rank": 50,
             "value": "text"
         },
         "ABC": {
-            "caption": "autoClosingOvertype",
+            "caption": "Auto-Closing Overtype",
             "default_val": "always",
             "doc": "Options: \"always\", \"auto\", \"never\"",
             "editor": "DynamicValue",
             "name": "autoClosingOvertype",
-            "rank": 50,
+            "rank": 51,
             "value": "text"
         },
         "ABD": {
-            "caption": "autoClosingQuotes",
+            "caption": "Auto-Closing Quotes",
             "default_val": "always",
             "doc": "Options: \"always\", \"languageDefined\", \"beforeWhitespace\", \"never\"",
             "editor": "DynamicValue",
             "name": "autoClosingQuotes",
-            "rank": 51,
+            "rank": 52,
             "value": "text"
         },
         "ABE": {
-            "caption": "colorDecorators",
+            "caption": "Enable Color Decorators",
             "default_val": true,
             "editor": "DynamicValue",
             "name": "colorDecorators",
-            "rank": 52,
+            "rank": 53,
             "value": "boolean"
         },
         "ABF": {
-            "caption": "colorDecoratorsActivatedOn",
+            "caption": "Color Decorators Activated On",
             "default_val": "clickAndHover",
             "doc": "Options: \"clickAndHover\", \"click\", \"hover\"",
             "editor": "DynamicValue",
             "name": "colorDecoratorsActivatedOn",
-            "rank": 53,
+            "rank": 54,
             "value": "text"
+        },
+        "ABH": {
+            "caption": "Content Update Delay",
+            "default_val": 1000,
+            "doc": "Minimum number of milliseconds (ms) before the even get re-triggered between 2 updates",
+            "editor": "DynamicValue",
+            "name": "contentUpdateDelay",
+            "rank": 7,
+            "value": "number"
         }
     },
     "has_reset_fn": true,
@@ -478,7 +498,7 @@
     },
     "states": {
         "AAG": {
-            "caption": "current value",
+            "caption": "Current Value",
             "initialization_code": {
                 "fn": "function(properties, context) {\n\n\n\n}"
             },

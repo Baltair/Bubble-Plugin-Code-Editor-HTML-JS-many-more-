@@ -11,6 +11,7 @@ function(instance, context) {
       document.head.appendChild(monacoLoader);
     }
     
+    instance.data.lastContentUpdateTime = 0;
     instance.data.triggerInit = true;
     
 }

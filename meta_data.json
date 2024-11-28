@@ -6,7 +6,7 @@
     },
     "data_tracked": false,
     "demo_page": "https://demo-codeeditor.bubbleapps.io/version-test",
-    "description": "Add a Code Editor to your application. Have users able to view/edit code in many language. \n\n(This is an initial version just for myself but why not having the whole community benefit from it. Sorry in advance for the lack of documentations, I'll do it as soon as I have more time.)",
+    "description": "Code Editor for your application, give the power to your users to view/edit code on a professional format in more than 80 programming languages. \n\nDemo : https://demo-codeeditor.bubbleapps.io/version-test\n\nFor any requests : https://joapp.ca/request",
     "image": "//meta-q.cdn.bubble.io/f1732343088454x458853752146757060/unnamed%20%2839%29%20%281%29.png",
     "license": "open_source",
     "name": "Code Editor (HTML, JS & many more)",
