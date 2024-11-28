@@ -1,5 +1,4 @@
 function(instance, properties, context) {
-
     // Verify re-initialisation conditions
     if (instance.data.p) {
         for (var k in properties) {
@@ -18,7 +17,7 @@ function(instance, properties, context) {
     if (instance.data.triggerInit) {
         instance.data.triggerInit = false;
 
-        let editorOptions = {
+        instance.data.editorOptions = {
             value: instance.data.p.initValue,
             language: instance.data.p.language,
             theme: instance.data.p.theme,
@@ -84,8 +83,11 @@ function(instance, properties, context) {
 
         if (instance.data.initCompleted) {
             // Changing a value
-            instance.data.editor.updateOptions(editorOptions);
-            instance.publishState("current_value", instance.data.editor.getValue()); // Initialize first state value on editor loading
+            instance.publishState("current_value", instance.data.editor.getValue());
+            instance.data.editor.updateOptions(instance.data.editorOptions);
+            if(instance.data.editor.getModel().getLanguageId() != instance.data.p.language){
+                monaco.editor.setModelLanguage(instance.data.editor.getModel(), instance.data.p.language);
+            } // Initialize first state value on editor loading
         } else {
             // First initialization
             instance.data.loadMonaco(() => {
@@ -110,7 +112,7 @@ function(instance, properties, context) {
                         }
                     });
                 });
-                instance.data.editor = monaco.editor.create(instance.canvas, editorOptions);
+                instance.data.editor = monaco.editor.create(instance.canvas, instance.data.editorOptions);
 
                 // EXTRA LANGUAGES OPTIONS         
 
