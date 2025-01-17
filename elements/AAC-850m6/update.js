@@ -92,8 +92,9 @@ function(instance, properties, context) {
             // First initialization
             instance.data.loadMonaco(() => {
                 // IMPLEMENT LISTENERS ON EDITOR CREATION
-                monaco.editor.onDidCreateEditor((editor) => {
+                const creationListener = monaco.editor.onDidCreateEditor((editor) => {
                     // When content is updated
+                    creationListener.dispose();
                     editor.onDidChangeModelContent(() => {
                         const content = editor.getValue(); // Get the updated content
                         instance.publishState("current_value", content);

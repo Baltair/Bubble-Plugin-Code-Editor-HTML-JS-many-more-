@@ -1,5 +1,5 @@
 function(instance, context) {
-    
+
     // Load Monaco Library
     instance.data.loadMonaco = function(callback) {
       const monacoLoader = document.createElement("script");
