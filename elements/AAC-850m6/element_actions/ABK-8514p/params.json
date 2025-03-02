@@ -1,0 +1,14 @@
+{
+    "caption": "Update Content",
+    "fields": {
+        "ABL": {
+            "caption": "Value",
+            "doc": "The content to be displayed in the code editor",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "value",
+            "rank": 0,
+            "value": "text"
+        }
+    }
+}

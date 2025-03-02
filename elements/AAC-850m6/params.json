@@ -1,6 +1,7 @@
 {
     "add_hover_pressed": true,
     "add_is_visible": true,
+    "autobinding_value": "text",
     "category": "visual elements",
     "default_dim": {
         "height": 400,
@@ -487,7 +488,7 @@
             "value": "number"
         }
     },
-    "has_reset_fn": true,
+    "has_reset_fn": false,
     "icon": "ion-code",
     "property_applications": {
         "Background": false,
@@ -505,5 +506,6 @@
             "name": "current_value",
             "value": "text"
         }
-    }
+    },
+    "support_autobinding": true
 }
